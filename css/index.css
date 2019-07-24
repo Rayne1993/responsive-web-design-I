@@ -226,3 +226,55 @@ h1, h2, h3, h4, h5 {
         width: 99%;
     }
   }
+
+  @media(max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+	header nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+        width: 100%;
+        margin: 0;
+	}
+
+	header nav a {
+		padding: 20px;
+		border-top: 1px solid gray;
+		text-align: center;
+		width: 100%;
+	}
+
+	header nav a:last-child {
+		border-bottom: 1px solid gray;
+	}
+
+    .cta {
+        margin: 0;
+    }
+
+	.top-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-content .text-content {
+		padding: 10px;
+	}
+
+	.bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-content .bottom-content .text-content {
+		padding: 10px;
+		width: 100%;
+	}
+}
